@@ -1,0 +1,140 @@
+    body, html {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica,sans-serif;
+        background: url('https://wallpapers.com/images/high/laptop-keyboard-aesthetic-mn7fs86ejidg9l48.webp') no-repeat center center fixed;
+        background-size: cover;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+}
+
+.container {
+    background-color: rgb(247, 204, 247);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+header .login-button a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.login-form {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.login-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    background: none;
+    border: 1px solid #333;
+    border-radius: 5px;
+    outline: none;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #333;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+    top: -10px;
+    left: 10px;
+    color: #3498db;
+    font-size: 12px;
+}
+
+.remember {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.remember label {
+    display: flex;
+    align-items: center;
+}
+
+.remember input {
+    margin-right: 5px;
+}
+
+.login-form button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.login-form button:hover {
+    background-color: #2980b9;
+}
+
+.login-form p {
+    text-align: center;
+}
+
+.login-form p a {
+    text-decoration: none;
+    color: #3498db;
+}
